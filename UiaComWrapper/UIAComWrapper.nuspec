@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>UIAComWrapper</id>
-    <version>1.1.0.14</version>
+    <id>UIA3ComWrapper</id>
+    <version>1.1.0.15</version>
     <title>UIAComWrapper</title>
     <authors>Michael Bernstein</authors>
     <owners>Michael Bernstein, Jake Ginnivan</owners>
@@ -12,11 +12,12 @@
     <description>The UI Automation COM-to-.NET Adapter makes it possible to use the new Windows Automation API 3.0 COM interfaces, with their improved reliability and performance, while still using the same System.Windows.Automation classes as in earlier versions of UI Automation</description>
     <copyright>Copyright Michael Bernstein 2013</copyright>
     <tags>UIA</tags>
+	  <dependencies>
+		  <group targetFramework=".NETFramework4.7.2" />
+	  </dependencies>
   </metadata>
   <files>
-    <file src="UIAComWrapper.dll" target="lib\net40" />
-    <file src="UIAComWrapper.pdb" target="lib\net40" />
-    <file src="Interop.UIAutomationClient.dll" target="lib\net40" />
-    <file src="install.ps1" target="tools" />
+    <file src="UIAComWrapper.dll" target="lib\net472" />
+    <file src="UIAComWrapper.pdb" target="lib\net472" />
   </files>
 </package>
